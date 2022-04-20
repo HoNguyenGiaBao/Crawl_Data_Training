@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
     # Tạo ngày giờ lấy file 1 cách tự động, chỉ cần mở lên là chạy
     today = (datetime.datetime.now()).strftime("%Y%m%d")
-    filename = f"{today}.csv"
+    filename = f"Covid_Web_{today}.csv"
 
     # w+ là ghi đè lên file cũ luôn
     with open(os.path.join("data",filename), 'w+', encoding="UTF-8") as f:
