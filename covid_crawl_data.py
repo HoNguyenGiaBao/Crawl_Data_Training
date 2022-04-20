@@ -31,7 +31,7 @@ if __name__ == "__main__":
     # Đã có data, giờ thì cần lưu vào 1 file
 
     for i in range(len(list_cities)):
-        row = "{},{},{},{}.".format(list_cities[i],list_totals[i],list_daynows[i],list_dies[i])
+        row = "{},{},{},{}\n".format(list_cities[i],list_totals[i],list_daynows[i],list_dies[i])
         data_save_file_csv.append(row)
 
     # Tạo ngày giờ lấy file 1 cách tự động, chỉ cần mở lên là chạy
